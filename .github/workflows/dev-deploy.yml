@@ -19,3 +19,6 @@ jobs:
           NETLIFY_DEPLOY_MESSAGE: "Dev deploy v${{ github.ref }}"
           NETLIFY_DEPLOY_TO_PROD: true
           deploy_alias: ${{ env.BRANCH_NAME }}
+          build_directory: ./
+          install_command: ls
+          build_command: ls
