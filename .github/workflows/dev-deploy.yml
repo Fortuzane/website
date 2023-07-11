@@ -17,7 +17,7 @@ jobs:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_CLIENT_ID }}
           NETLIFY_DEPLOY_MESSAGE: "Dev deploy v${{ github.ref }}"
-          NETLIFY_DEPLOY_TO_PROD: true
+          NETLIFY_DEPLOY_TO_PROD: false
           deploy_alias: ${{ env.BRANCH_NAME }}
           build_directory: ./
           install_command: ls
